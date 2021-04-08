@@ -3,10 +3,36 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HospitaldetailsComponent } from './hospitaldetails/hospitaldetails.component';
+import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { CovidComponent } from './covid/covid.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HospitalmanageComponent } from './hospitalmanage/hospitalmanage.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    LoginComponent,
+    SignupComponent,
+    HospitaldetailsComponent,
+    EmployeedetailsComponent,
+    NotfoundComponent,
+    CovidComponent,
+    AboutComponent,
+    ContactComponent,
+    ProfileComponent,
+    HospitalmanageComponent
   ],
   imports: [
     BrowserModule,

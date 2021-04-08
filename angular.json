@@ -31,9 +31,17 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/assets/js/jquery.particleground.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "revive"
+  "defaultProject": "revive",
+  "cli": {
+    "analytics": "9e2dd452-85d0-4b53-931d-7e1f8f90a6df"
+  }
 }
