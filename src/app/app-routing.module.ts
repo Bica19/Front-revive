@@ -9,6 +9,7 @@ import { HospitaldetailsComponent } from './hospitaldetails/hospitaldetails.comp
 import { HospitalmanageComponent } from './hospitalmanage/hospitalmanage.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'hospitaldetails', component: HospitaldetailsComponent},
   {path: 'hospitalmanage', component: HospitalmanageComponent},
   {path: 'employeedetails', component: EmployeedetailsComponent},
+  {path: 'profile', component: ProfileComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: '**', component: NotfoundComponent}
