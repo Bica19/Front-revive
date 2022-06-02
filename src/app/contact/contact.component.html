@@ -5,20 +5,17 @@
                 <div class="col-lg-6">
                     <div class="">
                         <h2 class="mb-5">Send Message Us</h2>
-                        <form>
+                        <form [formGroup]="contactForm" (ngSubmit)="getForm(contactForm)">
                             <div class="form-group mb-4">
-                                <input type="email" class="form-control rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+                                <input formControlName="name" type="text" class="form-control rounded-0" placeholder="Your Name">
                             </div>
                             <div class="form-group mb-4">
-                                <input type="password" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Your Email">
+                                <input formControlName="email" type="text" class="form-control rounded-0" placeholder="Your Email">
                             </div>
                             <div class="form-group mb-4">
-                                <input type="password" class="form-control rounded-0" id="exampleInputPassword1" placeholder="Subject">
+                                <textarea class="form-control rounded-0" rows="3" placeholder="Message"></textarea>
                             </div>
-                            <div class="form-group mb-4">
-                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill mx-auto mb-5">Send Message</button>
+                            <button type="submit" [disabled]="contactForm.status == 'INVALID'" class="btn btn-primary btn-lg rounded-pill mx-auto mb-5">Send Message</button>
                         </form>
                     </div>
                 </div>

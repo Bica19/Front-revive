@@ -52,3 +52,18 @@
 .about .adesc .development {
     width: 90%;
 }
+.comments {
+    background-color: #f7f7f7;
+}
+.comments li {
+    border: 1px solid #999;
+    background-color: #e5e5e5;
+}
+.comments .others:hover {
+    border: 1px solid #343434;
+    background-color: #343434;
+    color: white;
+}
+.comments img {
+    border-radius: 50%;
+}

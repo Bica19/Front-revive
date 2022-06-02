@@ -8,8 +8,8 @@
             <p class="alert alert-danger col-md-5 text-center" *ngIf="signupForm.get('name').status == 'INVALID' && signupForm.get('name').touched">Please Enter A Valid Name From 2 To 12 Characters</p>
             <input formControlName="email" type="email" class="col-md-5 mr-4 mt-3" placeholder="Enter Your Email">
             <p class="alert alert-danger col-md-5 text-center" *ngIf="signupForm.get('email').status == 'INVALID' && signupForm.get('email').touched">Please Enter A Valid Email</p>
-            <input formControlName="phone" type="text" class="col-md-5 mr-4 mt-3" placeholder="Enter Your Phone">
-            <p class="alert alert-danger col-md-5 text-center" *ngIf="signupForm.get('phone').status == 'INVALID' && signupForm.get('phone').touched">Please Enter A Valid Phone Number</p>
+            <input formControlName="phoneNumber" type="text" class="col-md-5 mr-4 mt-3" placeholder="Enter Your Phone">
+            <p class="alert alert-danger col-md-5 text-center" *ngIf="signupForm.get('phoneNumber').status == 'INVALID' && signupForm.get('phoneNumber').touched">Please Enter A Valid Phone Number</p>
             <input formControlName="age" type="text" class="col-md-5 mr-4 mt-3" placeholder="Enter Your Age">
             <p class="alert alert-danger col-md-5 text-center" *ngIf="signupForm.get('age').status == 'INVALID' && signupForm.get('age').touched">Please Enter A Valid Age From 16 To 60 Years</p>
             <input formControlName="password" type="password" class="col-md-5 mr-4 mt-3" placeholder="Enter A Password">

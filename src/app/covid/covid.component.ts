@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarColorService } from '../navbar-color.service';
 
 @Component({
   selector: 'app-covid',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CovidComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _NavbarColorService : NavbarColorService) { }
 
   ngOnInit(): void {
+    this._NavbarColorService.changeNavColor.next('bg-revive');
   }
 
 }

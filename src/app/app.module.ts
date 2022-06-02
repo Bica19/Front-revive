@@ -18,6 +18,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HospitalmanageComponent } from './hospitalmanage/hospitalmanage.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BloodCentersComponent } from './blood-centers/blood-centers.component';
+import { BotChatComponent } from './bot-chat/bot-chat.component';
+import { DontaionComponent } from './dontaion/dontaion.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { HospitalmanageComponent } from './hospitalmanage/hospitalmanage.compone
     AboutComponent,
     ContactComponent,
     ProfileComponent,
-    HospitalmanageComponent
+    HospitalmanageComponent,
+    DashboardComponent,
+    BloodCentersComponent,
+    BotChatComponent,
+    DontaionComponent
   ],
   imports: [
     BrowserModule,
